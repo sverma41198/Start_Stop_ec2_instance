@@ -15,7 +15,7 @@
 
 **Project Architecture:**
 
-![](Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.001.png)
+![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.001.png)
 
 **Execution Steps:**
 
