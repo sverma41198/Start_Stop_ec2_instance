@@ -20,7 +20,7 @@
 **Execution Steps:**
 
 1) **Create an IAM policy and execution role for your Lambda function**
-1. **Create an IAM policy using the JSON policy editor
+1. **Create an IAM policy using the JSON policy editor**
 
 "Version": "2012-10-17",
 
