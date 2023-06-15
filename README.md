@@ -20,7 +20,7 @@
 **Execution Steps:**
 
 1) **Create an IAM policy and execution role for your Lambda function**
-1. [**Create an IAM policy using the JSON policy editor](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html#access_policies_create-json-editor)**.** {
+1. **Create an IAM policy using the JSON policy editor
 
 "Version": "2012-10-17",
 
@@ -69,15 +69,15 @@
 
 **Under Existing role, choose the IAM role that we created.**
 
-![](Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.002.jpeg)
+![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.002.jpeg)
 
 4. **Startinstance lambda function:**
 
-![](Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.003.jpeg)
+![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.003.jpeg)
 
 5. **Stopinstance lambda function:**
 
-![](Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.004.jpeg)
+![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.004.jpeg)
 
 6. **Test your Lambda functions**
 1. **Open the Lambda console, and then choose Functions.**
@@ -113,13 +113,13 @@
 
 **6. For Schedule pattern ‘stopinstance’,**
 
-**Schedule Cron expression 30 16 \* \* ? \*![](Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.005.png)**
+**Schedule Cron expression 30 16 \* \* ? \*![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.005.png)**
 
 **For stoping the instance at 16:30 GMT i.e. 10:00 PM in IST**
 
-![](Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.006.jpeg)
+![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.006.jpeg)
 
-![](Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.007.jpeg)
+![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.007.jpeg)
 
 4) **Code Repo:**
 
