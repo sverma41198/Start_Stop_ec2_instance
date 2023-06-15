@@ -96,15 +96,15 @@
 
 **c . Enter a Name for your rule, "startinstances".**
 
-**Description-Starting instance at 10:00 AM IST**
+
+|**Description**|**-Starting instance at 10:00 AM IST**|
 
 4. **Enter a Name for your rule, "stopinstances".**
 
 
 
-|**Description**|**-Stopping instance at 10:00 PM IS**|
-| - | - |
-|||
+|**Description**|**-Stopping instance at 10:00 PM IST**|
+
 5. **For Schedule pattern ‘start instance’,**
 
 **Schedule Cron expression 30 4 \* \* ? \***
