@@ -10,7 +10,7 @@
 
 **Prerequisites:**
 
-- **Aws account (Servicer:**Ec2, IAM, Lambda Function, CloudWatch Events)**
+- Aws account (Servicer:**Ec2, IAM, Lambda Function, CloudWatch Events**)
 - **Github Account**
 
 **Project Architecture:**
@@ -20,6 +20,7 @@
 **Execution Steps:**
 
 1) **Create an IAM policy and execution role for your Lambda function**
+
 a. **Create an IAM policy using the JSON policy editor**
 
 "Version": "2012-10-17",
@@ -57,8 +58,11 @@ a. **Create an IAM policy using the JSON policy editor**
 2. **Create an IAM role for Lambda.**
 - **Added StartStopec2poily (custom) and AmazonEC2FullAccess**
 3) **Create Lambda functions that stop and start your EC2 instances**
+
 a. **Open the Lambda console, and then choose the Create function.**
+
 b. **Choose an Author from scratch.**
+
 c. **Under Basic information, add the following information:**
 
 **For Function name, enter a name that identifies it as the function that's used to stop your EC2 instances. For example, "StopEC2Instances".**
@@ -77,18 +81,26 @@ c. **Under Basic information, add the following information:**
 ![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.004.jpeg)
 
 6. **Test your Lambda functions**
-a. **Open the Lambda console, and then choose Functions.**
-b. **Choose one of the functions that you created.**
-c. **Choose the Code tab.**
-d. **In the Code source section, choose Test.**
-e. **In the Configure test event dialog box, choose Create new test event.**
-f. **Enter an Event name. Then, choose Create.**
 
+a. **Open the Lambda console, and then choose Functions.**
+
+b. **Choose one of the functions that you created.**
+
+c. **Choose the Code tab.**
+
+d. **In the Code source section, choose Test.**
+
+e. **In the Configure test event dialog box, choose Create new test event.**
+
+f. **Enter an Event name. Then, choose Create.**
 **Note: Don't change the JSON code for the test event. The function doesn't use it.**
+
 g. **Choose Test to run the function.**
 
 7) **Create EventBridge rules that run your Lambda functions**
+
 a. **Open the CLoudWatch**
+
 b. **Select Create rule.**
 
 **c . Enter a Name for your rule, "startinstances".**
