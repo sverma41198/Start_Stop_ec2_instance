@@ -10,7 +10,7 @@
 
 **Prerequisites:**
 
-- **Aws account (Servicer:**Ec2, IAM, Lambda Function, CloudWatch Events)
+- **Aws account (Servicer:**Ec2, IAM, Lambda Function, CloudWatch Events)**
 - **Github Account**
 
 **Project Architecture:**
@@ -20,7 +20,7 @@
 **Execution Steps:**
 
 1) **Create an IAM policy and execution role for your Lambda function**
-1. **Create an IAM policy using the JSON policy editor**
+a. **Create an IAM policy using the JSON policy editor**
 
 "Version": "2012-10-17",
 
@@ -56,17 +56,14 @@
 
 2. **Create an IAM role for Lambda.**
 - **Added StartStopec2poily (custom) and AmazonEC2FullAccess**
-2) **Create Lambda functions that stop and start your EC2 instances**
-1. **Open the Lambda console, and then choose the Create function.**
-1. **Choose an Author from scratch.**
-1. **Under Basic information, add the following information:**
+3) **Create Lambda functions that stop and start your EC2 instances**
+a. **Open the Lambda console, and then choose the Create function.**
+b. **Choose an Author from scratch.**
+c. **Under Basic information, add the following information:**
 
 **For Function name, enter a name that identifies it as the function that's used to stop your EC2 instances. For example, "StopEC2Instances".**
-
 **For Runtime, choose Python 3.9.**
-
 **Under Permissions, expand Change default execution role. Under Execution role, choose Use an existing role.**
-
 **Under Existing role, choose the IAM role that we created.**
 
 ![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.002.jpeg)
@@ -80,38 +77,38 @@
 ![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.004.jpeg)
 
 6. **Test your Lambda functions**
-1. **Open the Lambda console, and then choose Functions.**
-1. **Choose one of the functions that you created.**
-1. **Choose the Code tab.**
-1. **In the Code source section, choose Test.**
-1. **In the Configure test event dialog box, choose Create new test event.**
-1. **Enter an Event name. Then, choose Create.**
+a. **Open the Lambda console, and then choose Functions.**
+b. **Choose one of the functions that you created.**
+c. **Choose the Code tab.**
+d. **In the Code source section, choose Test.**
+e. **In the Configure test event dialog box, choose Create new test event.**
+f. **Enter an Event name. Then, choose Create.**
 
 **Note: Don't change the JSON code for the test event. The function doesn't use it.**
+g. **Choose Test to run the function.**
 
-7. **Choose Test to run the function.**
-3) **Create EventBridge rules that run your Lambda functions**
-1. **Open the CLoudWatch**
-1. **Select Create rule.**
+7) **Create EventBridge rules that run your Lambda functions**
+a. **Open the CLoudWatch**
+b. **Select Create rule.**
 
 **c . Enter a Name for your rule, "startinstances".**
 
 
 |**Description**|**-Starting instance at 10:00 AM IST**|
 
-4. **Enter a Name for your rule, "stopinstances".**
+d. **Enter a Name for your rule, "stopinstances".**
 
 
 
 |**Description**|**-Stopping instance at 10:00 PM IST**|
 
-5. **For Schedule pattern ‘start instance’,**
+e. **For Schedule pattern ‘start instance’,**
 
 **Schedule Cron expression 30 4 \* \* ? \***
 
 **For starting the instance at 4:30 GMT i.e. 10:00 AM in IST Then Lambda startinstance as target**
 
-**6. For Schedule pattern ‘stopinstance’,**
+**f. For Schedule pattern ‘stopinstance’,**
 
 **Schedule Cron expression 30 16 \* \* ? \*![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.005.png)**
 
@@ -121,10 +118,10 @@
 
 ![](Readme/Aspose.Words.64e7f0df-54b6-4fd3-acd4-5d18027cfd84.007.jpeg)
 
-4) **Code Repo:**
+8) **Code Repo:**
 
 [**Link: https://github.com/sverma41198/Start_Stop_ec2_instance**](https://github.com/sverma41198/Start_Stop_ec2_instance)
 
-5) **Outcome:**
+9) **Outcome:**
 - **Ec2 instances with “ec2-start:true” tag started at 10:00 Am IST**
 - **Ec2 instances with “ec2-stop:true” tag stopped at 10:00 PM IST**
